@@ -2,6 +2,10 @@
 
 The Memory-GPT Plugin is a ChatGPT extension that allows ChatGPT to store new information on its own. This plugin currently only works with the Pinecone datastore.
 
+## Demo
+
+[Link Text](https://twitter.com/SerbinenkoSerge/status/1652791807481372672)
+
 ## Getting Started
 
 1. Set the required environment variables:
