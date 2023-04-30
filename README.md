@@ -4,7 +4,7 @@ The Memory-GPT Plugin is a ChatGPT extension that allows ChatGPT to store new in
 
 ## Demo
 
-[Link Text](https://twitter.com/SerbinenkoSerge/status/1652791807481372672)
+[Demo Video](https://twitter.com/SerbinenkoSerge/status/1652791807481372672)
 
 ## Getting Started
 
