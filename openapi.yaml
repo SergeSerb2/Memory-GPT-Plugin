@@ -1,0 +1,43 @@
+openapi: 3.0.1
+info:
+  title: Memory Plugin
+  description: A plugin that allows the user to store and manage textual information using ChatGPT. The user can add text to the memory system, which will then be available for querying.
+  version: 'v1'
+servers:
+  - url: http://localhost:5003
+paths:
+  /remember:
+    post:
+      operationId: remember
+      summary: Add text to the memory system
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/rememberRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rememberResponse'
+
+components:
+  schemas:
+    rememberRequest:
+      type: object
+      required:
+      - text
+      properties:
+        text:
+          type: string
+          description: The text to add to the memory system.
+          required: true
+    rememberResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          description: A message indicating the result of the operation.
